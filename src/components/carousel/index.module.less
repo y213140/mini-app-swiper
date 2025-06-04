@@ -1,0 +1,24 @@
+.carouselContainer {
+  overflow: hidden;
+  position: relative;
+  will-change: transform;
+  /* 根据需求调整高度 */
+
+  .slidesWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: transform;
+    height: 100%;
+
+    .slideItem {
+      flex: 0 0 auto;
+      height: 100%;
+      box-sizing: border-box;
+
+      .slideContent {
+        backface-visibility: hidden;
+        perspective: 1000px;
+      }
+    }
+  }
+}
