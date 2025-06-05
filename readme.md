@@ -10,4 +10,4 @@
 
 #### 效果
 
-![such](https://github.com/user-attachments/assets/8eb3f076-9c64-4b76-a44e-5fb59b779498 "ios-such")
+![go-github-link](https://github.com/user-attachments/assets/8eb3f076-9c64-4b76-a44e-5fb59b779498 "ios-such")
