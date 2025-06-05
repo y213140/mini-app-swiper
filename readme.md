@@ -7,3 +7,7 @@
 
 #### demo
  src/pages/swiper
+
+#### 效果
+
+![such](https://github.com/user-attachments/assets/8eb3f076-9c64-4b76-a44e-5fb59b779498 "ios-such")
