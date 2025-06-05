@@ -8,7 +8,7 @@ const MAX_RETRY = 5; // 最大重试次数
 const RETRY_INTERVAL = 30; // 重试间隔(ms)
 const THISCOMNAME = "Hourse-", THISCOMNAMEVIEW = 'HourseSwiper-'
 
-const SlideItem = memo(({ dom, id, slide, index, onGetDom }) => {
+const SlideItem = memo(({ dom, id, index, onGetDom }) => {
     const timerRef = useRef(null);
     useEffect(() => {
         let retryCount = 0;
@@ -51,7 +51,7 @@ const SlideItem = memo(({ dom, id, slide, index, onGetDom }) => {
 
 
 
-const Carousel = ({ className, width, data, children }) => {
+const Carousel = ({ className, width, speed, data, children }) => {
     const uuid = useCallback(() => {
         var s = [];
         var hexDigits = "0123456789abcdef";
@@ -75,7 +75,7 @@ const Carousel = ({ className, width, data, children }) => {
         totalWidth: 0,
         realContentWidth: 0,
         lastTimestamp: 0,
-        duration: 15000, // 15秒完成一轮
+        duration: speed * data.length * 2, // 15秒完成一轮
         animationFrameId: null
     });
 
@@ -93,6 +93,8 @@ const Carousel = ({ className, width, data, children }) => {
     useEffect(() => {
         if (childDom.current.length === extendedSlides.length) {
             (async () => {
+                console.log(children)
+
                 const measureSlides = (contentWidth) => {
                     try {
                         const measurements = childDom.current.map(item => item?.width)

@@ -1,6 +1,7 @@
 export default defineAppConfig({
   pages: [
-    'pages/swiper/index'
+    'pages/swiper/index',
+    'pages/index/index'
   ],
   window: {
     backgroundTextStyle: 'light',
