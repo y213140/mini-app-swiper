@@ -11,3 +11,8 @@
 #### 效果
 
 ![go-github-link](https://github.com/user-attachments/assets/8eb3f076-9c64-4b76-a44e-5fb59b779498 "ios-such")
+
+
+#### 需要增加暂停api吗？
+
+😌 or 🙃

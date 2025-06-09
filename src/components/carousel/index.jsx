@@ -93,8 +93,6 @@ const Carousel = ({ className, width, speed, data, children }) => {
     useEffect(() => {
         if (childDom.current.length === extendedSlides.length) {
             (async () => {
-                console.log(children)
-
                 const measureSlides = (contentWidth) => {
                     try {
                         const measurements = childDom.current.map(item => item?.width)

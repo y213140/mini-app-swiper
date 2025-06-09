@@ -1,6 +1,6 @@
 {
   "name": "mini-app-swiper",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "description": "",
   "repository": {
@@ -12,7 +12,7 @@
     "typescript": false,
     "css": "sass"
   },
-  "keywords": ["react", "mini-app", "swiper", "走马灯", "无限轮播"],
+  "keywords": ["走马灯", "react", "mini-app", "swiper", "无限轮播"],
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
@@ -38,7 +38,7 @@
     "Android >= 4.1",
     "ios >= 8"
   ],
-  "author": "",
+  "author": "y213140",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.5.5",
